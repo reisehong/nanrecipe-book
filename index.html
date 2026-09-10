@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Cookbook</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hero">
+
+  <div class="hero-left">
+    <p class="hero-eyebrow">SOMINAN CHAHONGNAO</p>
+    <h1 class="hero-title">MY COOKBOOK</h1>
+    <p class="hero-sub">A little recipe collection of the foods I like.</p>
+
+    <a class="hero-arrow-link" href="recipes.html" aria-label="See my recipe collection">
+      <svg width="46" height="18" viewBox="0 0 46 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 9H44" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M36 1L44 9L36 17" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="arrow-label">see the recipes</span>
+    </a>
+
+    <div class="hero-actions">
+      <a class="curved-btn" href="recipes.html#new">
+        Cook Up a New Recipe
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 6H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M10 1L15 6L10 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+
+      <button class="curved-btn" id="addPhotoBtn" type="button">
+        Snap &amp; Add a Photo
+        <svg width="18" height="16" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.2 1.5L5 3.2H2.3A1.3 1.3 0 0 0 1 4.5V12A1.3 1.3 0 0 0 2.3 13.3H15.7A1.3 1.3 0 0 0 17 12V4.5A1.3 1.3 0 0 0 15.7 3.2H13L11.8 1.5H6.2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="9" cy="8.2" r="2.6" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+      <input type="file" id="heroPhotoInput" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp" multiple class="visually-hidden">
+    </div>
+  </div>
+
+  <div class="collage" id="collage">
+  <figure class="h-lg" id="collageSlot0"><img src="images/dish1.jpg" alt=""></figure>
+  <figure class="h-sm"><img src="images/dish2.jpg" alt=""></figure>
+  <figure class="h-md"><img src="images/dish3.jpg" alt=""></figure>
+  <figure class="h-sm"><img src="images/dish4.jpg" alt=""></figure>
+  <figure class="h-md"><img src="images/dish5.jpg" alt=""></figure>
+  <figure class="h-lg"><img src="images/dish6.jpg" alt=""></figure>
+  <figure class="h-sm"><img src="images/dish7.jpg" alt=""></figure>
+  <figure class="h-md"><img src="images/dish8.jpg" alt=""></figure>
+  <figure class="h-sm"><img src="images/dish9.jpg" alt=""></figure>
+  <figure class="h-lg"><img src="images/dish10.jpg" alt=""></figure>
+  <figure class="h-md"><img src="images/dish11.jpg" alt=""></figure>
+  <figure class="h-sm"><img src="images/dish12.jpg" alt=""></figure>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

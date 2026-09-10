@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipes and Snaps of the Food I Like</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="page-nav">
+  <span class="brand-mark">My COOKBOOK</span>
+  <a class="back-link" href="index.html">
+    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15 6H1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M6 1L1 6L6 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Back home
+  </a>
+</nav>
+
+<header class="page-header">
+  <h1 class="page-heading">Recipes and Snaps of the Foods I like, drinks, snacks and everything.LOL</h1></header>
+
+<hr class="divider">
+
+<main class="collection" id="collection">
+  <div class="feature-photo" id="featurePhoto">
+    <div class="feature-photo-titlebar">
+      <span class="feature-photo-title">Snaps of the Food I Like</span>
+      <button class="feature-photo-create" id="featurePhotoCreate" type="button">Create a New Food Pic</button>
+    </div>
+    <div class="feature-photo-grid" id="featurePhotoGrid"></div>
+    <div class="feature-empty" id="featureEmpty">
+      <span class="big">📷</span>
+      <span class="label">Tap to add snaps of what I love</span>
+    </div>
+    <span class="feature-tag">Snaps of what I love</span>
+  </div>
+  <input type="file" id="featurePhotoInput" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp" multiple class="visually-hidden">
+  <!-- recipe cards are added here by script.js -->
+</main>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <h2>Add a New Recipe</h2>
+    <p class="modal-sub">Add a photo, the ingredients, and the steps.</p>
+    <form id="recipeForm">
+      <div class="field">
+        <label for="recipeTitle">Recipe name</label>
+        <input type="text" id="recipeTitle" required placeholder="e.g. Grandma's Sunday Stew">
+      </div>
+      <div class="field">
+        <label for="recipePhoto">Photo of the dish</label>
+        <input type="file" id="recipePhoto" accept=".png,.jpg,.jpeg,.webp,image/png,image/jpeg,image/webp" multiple>
+        <div class="recipe-photo-preview" id="recipePhotoPreview"></div>
+      </div>
+      <div class="field">
+        <label for="recipeOrigin">Origin (optional — Japanese, Korean, Italian,...)</label>
+        <input type="text" id="recipeOrigin" placeholder="e.g. Indian food">
+      </div>
+      <div class="field">
+        <label for="recipeIngredients">Ingredients</label>
+        <textarea id="recipeIngredients" rows="4" placeholder="One ingredient per line"></textarea>
+      </div>
+      <div class="field">
+        <label for="recipeSteps">Steps</label>
+        <textarea id="recipeSteps" rows="5" placeholder="One step per line, in order"></textarea>
+      </div>
+      <div class="modal-actions">
+        <button type="submit" class="curved-btn">Save Recipe</button>
+        <button type="button" class="curved-btn cancel-btn" id="cancelBtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal-overlay" id="featurePreviewOverlay">
+  <div class="modal feature-preview-modal">
+    <button type="button" class="feature-preview-close" id="featurePreviewClose">×</button>
+    <img id="featurePreviewImage" alt="">
+  </div>
+</div>
+
+<div class="modal-overlay" id="detailOverlay">
+  <div class="modal detail-modal" id="detailModal">
+    <!-- filled in by script.js when a recipe card is clicked -->
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
